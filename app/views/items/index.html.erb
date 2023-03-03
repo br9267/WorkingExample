@@ -1,0 +1,11 @@
+<h1 class="justify-content-center d-flex">Choose your Poison!</h1>
+
+<div class="row">
+  <% @items.each do |item| %>
+  <div class="card col m-4">
+    <p>Place for Image</p>
+    <h2><%= item.name %></h2>
+    <p><%= item.description %></p>
+    <p><%= item.price %></p>
+</div>
+  <% end %>
